@@ -107,6 +107,10 @@ func (pkg *Package) Level() int {
 	return pkg.cfg.Level
 }
 
+func (pkg *Package) Config() Config {
+	return *pkg.cfg
+}
+
 // Dir provides the name of the full directory in which the package is located.
 func (pkg *Package) Dir() string {
 	return pkg.cfg.PkgDir
